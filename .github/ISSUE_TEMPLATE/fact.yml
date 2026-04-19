@@ -1,0 +1,37 @@
+name: "事实性错误"
+description: "站点中有显然不符合实际的内容"
+title: "【事实性错误】"
+labels: ["事实性错误"]
+body:
+  - type: input
+    id: post_id
+    attributes:
+      label: "页面 URL"
+      description: "您认为有误的页面 URL"
+      placeholder: "如 https://plaintext.stream/about/index.html"
+    validations:
+      required: true
+  - type: textarea
+    id: original_text
+    attributes:
+      label: "原文"
+      description: "引用原文您认为错误的部分"
+      placeholder: "地球是平的！"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "依据"
+      description: "为什么您认为这里是错误的？请引用信息源"
+      placeholder: "https://en.wikipedia.org/wiki/Earth"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 您确认您的信息准确吗？
+      description: 请确认您已经包括了所有有用的信息
+      options:
+        - label: 是的
+          required: true
