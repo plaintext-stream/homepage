@@ -51,3 +51,7 @@ body {
 .content .good {
     color: var(--text-green);
 }
+
+.content .broken {
+    color: var(--text-red);
+}
